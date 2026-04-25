@@ -1,50 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Blaise Portfolio</title>
-    <style>
-        body {
-            font-family: Arial;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blaise Fenton | Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px;
+      background: #111827;
+    }
+
+    header h1 {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #cbd5e1;
+    }
+
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #020617;
+    }
+
+    nav a {
+      color: #f8fafc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #334155;
+      padding: 10px 15px;
+      margin: 6px;
+      border-radius: 20px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #38bdf8;
+      color: #020617;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #020617;
+      color: #94a3b8;
+    }
+  </style>
 </head>
 
 <body>
 
-<h1>Blaise Fenton</h1>
-<p>Aspiring IT Professional | Project Manager</p>
+  <header>
+    <h1>Blaise Fenton</h1>
+    <p>IT Student | Java & SQL Developer | Aspiring Project Manager</p>
+  </header>
 
-<div class="section">
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am an IT student with experience in Java, SQL, and networking. I am currently building projects focused on database systems and web applications.</p>
-</div>
+    <div class="card">
+      <p>
+        I am an IT student with experience in Java, SQL, database systems,
+        networking, and web-based applications. I enjoy building practical
+        projects that solve real problems and demonstrate both technical and
+        organizational skills.
+      </p>
+    </div>
+  </section>
 
-<div class="section">
+  <section id="projects">
     <h2>Projects</h2>
-    <ul>
-        <li><b>Project 4:</b> Three-Tier Web Application using Java Servlets and MySQL</li>
-        <li><b>Project 3:</b> SQL Client Application with logging system</li>
-        <li><b>Project 1:</b> Event-driven simulation (NileDotCom)</li>
-    </ul>
-</div>
 
-<div class="section">
+    <div class="card">
+      <h3>Three-Tier Web Application</h3>
+      <p>
+        Built a Java Servlet and MySQL web application using a client-server-database
+        structure. The project included role-based users, SQL command execution,
+        and business logic for shipment updates.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>SQL Client Application</h3>
+      <p>
+        Developed a Java Swing application that connects to MySQL, executes SQL
+        commands, displays results, and logs query/update activity by user.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>NileDotCom Event-Driven Simulation</h3>
+      <p>
+        Created a Java GUI shopping cart simulation with inventory lookup,
+        subtotal calculation, item management, and checkout functionality.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
     <h2>Skills</h2>
-    <p>Java, SQL, HTML, Networking, Git</p>
-</div>
+    <div class="card skills">
+      <span>Java</span>
+      <span>SQL</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>MySQL</span>
+      <span>GitHub</span>
+      <span>Networking</span>
+      <span>Problem Solving</span>
+    </div>
+  </section>
 
-<div class="section">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: bl630503@ucf.edu</p>
-</div>
+    <div class="card">
+      <p>Email: bl630503@ucf.edu</p>
+      <p>GitHub: github.com/blaise154</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Blaise Fenton</p>
+  </footer>
 
 </body>
 </html>
