@@ -101,19 +101,12 @@
   }
   .project-img {
   width: 100%;
-  height: 180px;
-  background: #ddd;
+  height: auto;
+  max-height: 350px;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #777;
-  font-size: 14px;
-}
-
-.project-img::after {
-  content: "Project Screenshot";
+  display: block;
 }
 </style>
 </head>
@@ -150,7 +143,6 @@
     <div class="card">
       <h3>Three-Tier Web Application</h3>
        <img src="images/project1.png" alt="Project Screenshot" class="project-img">
-      <div class="project-img"></div>
       <p>
         Built a Java Servlet and MySQL web application using a client-server-database
         structure. The project included role-based users, SQL command execution,
@@ -161,7 +153,6 @@
     <div class="card">
   <h3>Cisco Packet Tracer VLAN Network</h3>
        <img src="images/project2.png" alt="Project Screenshot" class="project-img">
-      <div class="project-img"></div>
       <p>
     Designed and configured a small network in Cisco Packet Tracer using VLANs,
     switch port assignments, router configuration, and connectivity testing.
@@ -173,7 +164,6 @@
     <div class="card">
       <h3>NileDotCom Event-Driven Simulation</h3>
        <img src="images/project3.png" alt="Project Screenshot" class="project-img">
-      <div class="project-img"></div>
       <p>
         Created a Java GUI shopping cart simulation with inventory lookup,
         subtotal calculation, item management, and checkout functionality.
