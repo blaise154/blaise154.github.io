@@ -99,20 +99,24 @@
     background: #ede3d3;
     color: #6b5e4b;
   }
+  .project-img {
+  width: 100%;
+  height: 180px;
+  background: #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.project-img::after {
+  content: "Project Screenshot";
+}
 </style>
 </head>
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-
-      const target = document.querySelector(this.getAttribute('href'));
-      target.scrollIntoView({ behavior: 'smooth' });
-
-      history.pushState("", document.title, window.location.pathname);
-    });
-  });
-</script>
 <body>
 
   <header>
@@ -145,6 +149,8 @@
 
     <div class="card">
       <h3>Three-Tier Web Application</h3>
+       <!-- IMAGE PLACEHOLDER -->
+      <div class="project-img"></div>
       <p>
         Built a Java Servlet and MySQL web application using a client-server-database
         structure. The project included role-based users, SQL command execution,
@@ -154,6 +160,8 @@
 
     <div class="card">
   <h3>Cisco Packet Tracer VLAN Network</h3>
+       <!-- IMAGE PLACEHOLDER -->
+      <div class="project-img"></div>
       <p>
     Designed and configured a small network in Cisco Packet Tracer using VLANs,
     switch port assignments, router configuration, and connectivity testing.
@@ -164,6 +172,8 @@
 
     <div class="card">
       <h3>NileDotCom Event-Driven Simulation</h3>
+       <!-- IMAGE PLACEHOLDER -->
+      <div class="project-img"></div>
       <p>
         Created a Java GUI shopping cart simulation with inventory lookup,
         subtotal calculation, item management, and checkout functionality.
@@ -217,12 +227,26 @@
 </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-      <p>Email: bl630503@ucf.edu</p>
-      <p>GitHub: github.com/blaise154</p>
-    </div>
-  </section>
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: <a href="mailto:bl630503@ucf.edu">bl630503@ucf.edu</a></p>
+
+    <p>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/blaise-fenton-98b7bb250/"
+         target="_blank">
+         View My LinkedIn
+      </a>
+    </p>
+
+    <p>
+      GitHub:
+      <a href="https://github.com/blaise154" target="_blank">
+        github.com/blaise154
+      </a>
+    </p>
+  </div>
+</section>
 
   <footer>
     <p>© 2026 Blaise Fenton</p>
