@@ -103,9 +103,9 @@
   max-width: 700px;
 }
   #projects {
-  max-width: 700px;
-  margin-left: 120px;
-  margin-right: auto;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
 }
 
 .project-img {
@@ -252,6 +252,13 @@
   <footer>
     <p>© 2026 Blaise Fenton</p>
   </footer>
-
+<script>
+  window.addEventListener("load", function () {
+    if (window.location.hash) {
+      history.replaceState(null, null, window.location.pathname);
+      window.scrollTo(0, 0);
+    }
+  });
+</script>
 </body>
 </html>
